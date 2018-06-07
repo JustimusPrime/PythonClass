@@ -5,14 +5,14 @@ choice = input().lower()
 
 print(choice[0])
 
-if choice[0] == "m":
+if choice[0] == "m" or choice[0] == "M":
     print("How many miles did you want to convert into kilometers?")
     miles = float(input())
 
     kilometers = miles * 1.60934
 
     print(f"{round(miles, 2)} miles would convert to {round(kilometers, 2)} km")
-elif choice[0] == "k":
+elif choice[0] == "k" or choice[0] == "K":
     print("How many kilometers did you want to convert into miles?")
     kilometers = float(input())
 
